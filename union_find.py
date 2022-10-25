@@ -8,9 +8,7 @@ class DisjointSet:
             return k
         return self.Find(self.parent[k])
     def Union(self, a, b):
-        x = self.Find(a)
-        y = self.Find(b)
-        self.parent[x] = y
+        self.parent[self.find(x)] = self.find(y)
 
 
 
