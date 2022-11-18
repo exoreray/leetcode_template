@@ -1,3 +1,4 @@
+# this code only merge sort one array (cannot merge sort two array togther)
 def merge(arr, l, m, r):
 	n1 = m - l + 1
 	n2 = r - m

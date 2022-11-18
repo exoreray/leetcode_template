@@ -21,9 +21,10 @@ print(l.bisect_left(5))
 print(l.bisect_right(5))
 print(l.count(5))
 print(l.index(1))
+print(l.index(5))
 
 class Solution:
-    def reversePairs(self, nums: List[int]) -> int:
+    def reversePairs(self, nums):
         l = SortedList()
         result = []
         for n in reversed(nums):

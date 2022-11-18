@@ -6,6 +6,10 @@ onPath = []
 
 def DFS(node): 
 
+    if node in onPath:
+        # hasCycle = True
+        return 
+    
     if node in visited:
         return
 
