@@ -1,6 +1,6 @@
 target = 0
 
-def BFS(node):
+def BFS1(node):
     queue = [node] 
     visited = set(node) 
     level = 0 
@@ -21,7 +21,25 @@ def BFS(node):
                     visited.add(neighbor)
         level += 1 
         
+def BFS2(node):
+    queue = [node] 
+    visited = set(node) 
+    level = 0 
 
+    while queue:
+        new_queue = []
+        for curr in queue: 
+
+            if curr == target:    
+                """do some thing here when find target"""
+                return 
+
+            for neighbor in curr.neighbors:     
+                if neighbor not in visited:
+                    new_queue.append(neighbor)
+                    visited.add(neighbor)
+        queue = new_queue
+        level += 1 
 
 
 
