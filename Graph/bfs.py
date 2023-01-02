@@ -6,10 +6,10 @@ def BFS1(node):
     level = 0 
 
     while queue:
-        layer_size = len(queue)
+        layer_size = len(queue) # diff: use size to seperate levels
 
         for _ in range(layer_size): 
-            curr = queue.pop(0) 
+            curr = queue.pop(0) # diff
 
             if curr == target:    
                 """do some thing here when find target"""
@@ -17,7 +17,7 @@ def BFS1(node):
 
             for neighbor in curr.neighbors:     
                 if neighbor not in visited:
-                    queue.append(neighbor)
+                    queue.append(neighbor) # diff
                     visited.add(neighbor)
         level += 1 
         
@@ -27,7 +27,7 @@ def BFS2(node):
     level = 0 
 
     while queue:
-        new_queue = []
+        new_queue = [] # diff: use new queue to seperate levels
         for curr in queue: 
 
             if curr == target:    
@@ -36,9 +36,9 @@ def BFS2(node):
 
             for neighbor in curr.neighbors:     
                 if neighbor not in visited:
-                    new_queue.append(neighbor)
+                    new_queue.append(neighbor) # diff
                     visited.add(neighbor)
-        queue = new_queue
+        queue = new_queue # diff
         level += 1 
 
 
