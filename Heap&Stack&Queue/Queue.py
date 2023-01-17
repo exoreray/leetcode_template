@@ -4,7 +4,7 @@
 
 queue = ["Amar", "Akbar", "Anthony"]
 queue.append("Ram")
-queue.pop(0)
+queue.pop(0) # O(n) very slow
 		
         
     # b. Use queue

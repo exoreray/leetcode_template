@@ -7,4 +7,4 @@ def backtrack(path, options):
     for choice in options:
         make(choice)
         backtrack(path, options)
-        redo(option)
+        redo(choice)

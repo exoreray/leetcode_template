@@ -1,5 +1,7 @@
 from define import TreeNode 
+
 # recursion
+
 def traverse(root):
     if not root:
         return
@@ -11,7 +13,6 @@ def traverse(root):
 
 
 # iteration
-
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         res = []

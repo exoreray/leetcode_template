@@ -9,7 +9,7 @@ def reverseList_iterative(head):
     '''
     pre = None
     cur = head
-    while cur:
+    while cur: # three pointers, reverse one link at a time, and move on next.
         next = cur.next
         cur.next = pre
         pre = cur

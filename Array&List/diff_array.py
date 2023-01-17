@@ -9,5 +9,5 @@ class Solution:
         for update in updates:
             diff[update[0]] += update[2]
             diff[update[1] + 1] -= update[2] # cautious, when -update, need to be one index afterward.
-        # accumulate function efficiently reconstruct diff_array back. Last index is redundant.
-        return list(accumulate(diff))[:-1] 
+        return list(accumulate(diff))[:-1] # accumulate function efficiently reconstruct diff_array back. Last index is redundant.
+        
